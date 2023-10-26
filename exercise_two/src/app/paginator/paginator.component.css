@@ -1,0 +1,30 @@
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1em;
+  background-color: #ddd;
+  border: none;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1em;
+  background-color: #ddd;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-button.prev {
+  align-self: flex-start;
+}
+
+.nav-button.next {
+  align-self: flex-end;
+}

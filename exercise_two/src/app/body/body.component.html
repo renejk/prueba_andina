@@ -1,0 +1,10 @@
+<ul class="repo-list">
+  <li *ngFor="let repo of repos" class="repo-item">
+    <div class="card">
+      <h2>{{ repo.name }}</h2>
+      <p>{{ repo.description }}</p>
+      <p>Estrellas: {{ repo.stargazers_count }}</p>
+      <p>Actualizado por última vez: {{ repo.updated_at | date }}</p>
+    </div>
+  </li>
+</ul>

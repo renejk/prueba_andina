@@ -1,0 +1,10 @@
+<app-spinner *ngIf="isLoading"></app-spinner>
+
+<div *ngIf="!isLoading">
+  <app-navbar></app-navbar>
+  <app-body [repos]="repos"></app-body>
+  <app-button-paginator
+    [page]="page"
+    (pageChange)="getResponse($event)"
+  ></app-button-paginator>
+</div>
